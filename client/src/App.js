@@ -156,13 +156,13 @@ function App() {
         <Button variant="contained" color="primary" onClick={addTask}  >Add Task</Button>
       </form>
       <ul>
-          {tasks.map(item=> 
-            <Task 
-              key={item.id} 
-              taskText={item.taskText} 
-              onClick={deleteTask(item.id)}
-            />)
-          }
+            {tasks.map(item => (
+                  <Task 
+                      key={item.id}
+                      taskText={item.taskText}
+                      onClick={deleteTask(item.id)}
+                  />
+             ))}
       </ul>
     </div>
   ) : (
